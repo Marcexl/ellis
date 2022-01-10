@@ -3,7 +3,359 @@
  * version 07012022
  * main style
  */
+@font-face {
+    font-family: Gotham-Black;
+    src: url(../fonts/Gotham-Black.otf);
+}
 
+@font-face {
+    font-family: Gotham-Bold;
+    src: url(../fonts/Gotham-Bold.otf);
+}
+
+@font-face {
+    font-family: Gotham-Light;
+    src: url(../fonts/Gotham-Light.otf);
+}
+
+@font-face {
+    font-family: Gotham-Book;
+    src: url(../fonts/Gotham-Book.otf);
+}
+
+@font-face {
+    font-family: Gotham-Medium;
+    src: url(../fonts/Gotham-Medium.otf);
+}
+
+html,body{
+    font-family: 'Gotham-Book',sans-serif;
+}
+p,
+li,
+a,
+label,
+span{
+    font-family: 'Gotham-Book',sans-serif;
+}
+
+h1,
+h2,
+h3{
+    font-family: 'Gotham-Bold',sans-serif;
+}
+
+h4,
+h5,
+h6
+{
+    font-family: 'Gotham-Medium',sans-serif;
+}
+
+p{
+    margin-bottom: 0;
+}
+.container-fluid{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+/* header */
  .navbar-brand img{ 
      max-width: 175px;
+     padding: 15px 0;
  }
+
+ #header-container{
+    padding:30px 60px;
+    background: #d9e7ea;
+ }
+
+ #header-container h2,
+ #header-container h1{
+    font-family: 'Gotham-Medium';
+     color: #4b6c75;
+     text-transform: uppercase;
+     text-align: center;
+ }
+ #header-container h1{
+     font-size: 2.5rem;
+ }
+
+ #header-container h2{
+     font-size: 1.5rem;
+ }
+ #header-container h1 span{
+     font-family: 'Gotham-Bold';
+     font-size: 3.5rem;
+     color: #fa5d3d;
+     text-transform: uppercase;
+ }
+ #header-container .container{
+     padding: 0;
+ }
+#form-header{
+    background: #4b6c75;
+    padding: 15px 30px;
+    -webkit-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.5);
+}
+#form-header p{
+    font-family: 'Gotham-Light';
+    margin-bottom: 0;
+    font-size: 1rem;
+    text-align: center;
+    color: #FFF;
+}
+
+#form-header h6{
+    text-align: center;
+    font-family: 'Gotham-Bold';
+    color: #FFF;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+#form-header label{
+    color: white;
+    font-size: .9rem;
+    font-family: 'Gotham-Light';
+}
+
+#header-container .col-4 img{
+    border:5px solid white;
+    margin-bottom: 15px;
+}
+
+#header-container .col-4 h4{
+    color: #4b6c75;
+    font-family: 'Gotham-Medium';
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#header-container .col-4 h3{
+    color: #fa5d3d;
+    font-family: 'Gotham-Bold';
+    text-align: center;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.btn-warning{
+    background:#fa5d3d;
+    color: #FFF;
+    border-radius: 0;
+    border:2px solid white;
+    width: 100%;
+    display: block;
+    font-family: inherit;
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+
+/* equipo section*/
+#equipo-container{
+    padding: 60px 60px;
+}
+
+#equipo-container h1{
+    font-size: 3.5rem;
+    color: #4b6c75;
+    font-family: 'Gotham-Bold';
+    text-transform: uppercase;
+}
+
+#equipo-container h2{
+    font-size: 2.5rem;
+    color: #fa5d3d;
+    font-family: 'Gotham-Medium';
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+#equipo-container p{
+    margin-bottom: 0;
+    font-size: 1.2rem;
+}
+
+#equipo-container p strong{
+    font-family: 'Gotham-Bold';
+}
+
+#equipo-container h3{
+    color: #4b6c75;
+    font-family: 'Gotham-Medium';
+    margin-bottom: 0;
+    padding: 30px 0;
+    color: #4b6c75;
+}
+
+#equipo-container img{
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#equipo-container .btn-warning{
+    width: 300px;
+}
+
+/* sucursales */
+
+#sucursales-container{
+    background: #4b6c75;
+    padding: 30px 60px;
+}
+
+#sucursales-container h1{
+    font-size: 3.5rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+#sucursales-container h2{
+    font-size: 2.5rem;
+    color: white;
+    text-transform: uppercase;
+}
+.sucursal-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.sucursal-item{
+    width: calc(33% - 15px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border: 1px solid white;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+    min-height: 200px;
+}
+.sucursal-item-desc{
+    padding-left: 10px;
+}
+.sucursal-item-desc p.suc-title{
+    color:#d9e7ea;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.sucursal-item-desc p{
+    color:#FFF;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.sucursal-item-icon{
+    position: relative;
+}
+
+.sucursal-item-icon span{
+    color:#4b6c75;
+    font-size: 2rem;
+    font-family: 'Gotham-Bold';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 14px;
+    padding-right: 4px;
+    text-align: center;
+    padding-right: 4px;
+}
+
+.sucursal-item-desc p.soon{
+    font-family: 'Gotham-Bold';
+    font-size: 1.5rem;
+}
+/* footer form */
+#form-container-1{
+    padding: 30px 60px;
+}
+#footer-form{
+    background: #d9e7ea;
+    -webkit-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.5);
+    padding: 45px 30px;
+}
+
+#footer-form label{
+    font-size: .8rem;
+}
+
+#footer-form .btn-warning{
+    width: calc(100% - 24px);
+    margin-left: 12px;
+}
+
+#footer-form p,
+#footer-form h6{
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    color: #4b6c75;
+    font-family: 'Gotham-Medium';
+}
+
+#footer-form h6{
+    color: #fa5d3d;
+    text-transform: uppercase;
+    font-family: 'Gotham-Bold';
+}
+
+/* footer */
+footer{
+    background: #4b6c75;
+    margin-top: 120px;
+}
+
+.footer-logo{
+    background: white;
+    text-align: center;
+    position: relative;
+    top: -80px;
+    padding-bottom: 30px;
+}
+
+.footer-logo p{
+    color: #4b6c75;
+    margin-top: 15px;
+    font-family: 'Gotham-Bold';
+    font-size: 1rem;
+}
+
+.footer-logo img{
+    display: block;
+    width: 400px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.footer-desc{
+    color: white;
+    text-align: center;
+    font-size: .9rem;
+}
+
+.footer-aca{
+    text-align: center;   
+    padding-bottom: 30px; 
+    color: white;
+    font-size: .9rem;
+}
+
+.footer-aca a{
+    display:inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: .9rem;
+    padding: 5px 15px;
+}
