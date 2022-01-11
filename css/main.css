@@ -27,9 +27,10 @@
     font-family: Gotham-Medium;
     src: url(../fonts/Gotham-Medium.otf);
 }
-
 html,body{
     font-family: 'Gotham-Book',sans-serif;
+    width: 100%;
+    height: auto;
 }
 p,
 li,
@@ -92,7 +93,7 @@ p{
      text-transform: uppercase;
  }
  #header-container .container{
-     padding: 0;
+     padding: 0 15px 0 0;
  }
 #form-header{
     background: #4b6c75;
@@ -126,6 +127,7 @@ p{
 #header-container .col-4 img{
     border:5px solid white;
     margin-bottom: 15px;
+    width: 100%;
 }
 
 #header-container .col-4 h4{
@@ -358,4 +360,142 @@ footer{
     text-decoration: none;
     font-size: .9rem;
     padding: 5px 15px;
+}
+
+@media screen and (max-width:756px){
+    .container-fluid{
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+    }
+    .navbar-brand{
+        width: 100%;
+    }  
+    .navbar-brand img{
+        display: block;
+        margin: 0 auto;
+    }
+
+    #form-container-1,
+    #sucursales-container,
+    #equipo-container,
+    #header-container{
+        padding: 30px 15px;
+    }
+    #header-container{
+        padding-bottom: 0;
+    }
+    #sucursales-container h1,
+    #equipo-container h1,
+    #header-container h1{
+        font-size: 2rem;
+    }
+    
+    #sucursales-container h2,
+    #equipo-container h2,
+    #header-container h2{
+        font-size: 1.5rem;
+    }
+
+    #header-container h1 span{
+        font-size: 2rem;
+    }
+    
+    #header-container .col-4 h3{
+        margin-bottom: 30px;
+    }
+
+    #form-container-1 .col-3,
+    #form-container-1 .col-6,
+    #equipo-container .col-6,
+    #header-container .col-3,
+    #header-container .col-4,
+    #header-container .col-9{
+        width: 100%;
+        display: block;
+    }
+
+    #form-header{
+        padding: 60px 30px;
+    }
+
+    #equipo-container img{
+        padding: 15px;
+        margin-bottom: 0;
+    }
+
+    #equipo-container .btn-warning{
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    #equipo-container h3 {
+        margin-bottom: 15px!important;
+        padding: 0;
+        font-size: 1rem;
+        margin-top: 0!important;
+    }
+    
+    #equipo-container p {
+        margin-bottom: 15px!important;
+        font-size: 1rem;
+    }
+    
+    #sucursales-container h1,
+    #sucursales-container h2{
+        text-align: center;
+    }
+
+    .sucursal-content{
+        flex-direction: column;
+    }
+
+    .sucursal-item{
+        display: block;
+        width: 100%;
+    }
+
+    .sucursal-item-icon{
+        text-align: center;
+    }
+
+    .sucursal-item-desc {
+        padding-left: 0;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .sucursal-item-icon img{
+        width: 60px;
+    }
+
+    .sucursal-item-icon span{
+        font-size: 1.2rem;
+    }
+
+    .sucursal-item-desc p.suc-title{
+        font-size: 1rem;
+    }
+
+    .footer-logo img{
+        width: 100%;
+    }
+
+    .footer-logo p {
+        font-size: .8rem;
+        padding: 0 10px;
+    }
+
+    #footer-form p, #footer-form h6{
+        font-size: 1rem;
+    }
+
+    #form-container-1 .col-2{
+        width: 0;
+    }
+
+    #form-container-1 .col-8{
+        width: 100%;
+    }
+
 }
