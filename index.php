@@ -1,14 +1,53 @@
+<?php
+/*
+ * mixed by marcexl
+ * version 11012022
+ * - home
+ */ 
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Ellis Eyes</title>
     <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>    
-    <script src='main.js'></script>
-</head>
+    <link rel="shortcut icon" href="img/logo.ico" />
+    
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1208016482969953');
+        fbq('track', 'PageView');
+        fbq('track', 'Lead');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=1208016482969953&ev=PageView&noscript=1"/></noscript>
+    <!-- End Facebook Pixel Code -->
+        
+    <!-- Global site tag (gtag.js) - Google Ads: 366678578 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-366678578"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'AW-366678578');
+    </script>
+    <script>
+        gtag('event', 'conversion', {'send_to': 'AW-366678578/Ud_ICKmwgP0CELKk7K4B'});
+    </script>
+      
+    </head>
 <body>
     <!-- header -->
     <header>
@@ -25,13 +64,13 @@
     <div class="container-fluid" id="header-container">
         <div class="row">
             <div class="col-9">
-                <h1>PAGA DESDE <span class="usd">$149 usd</span> AL MES</h1>
-                <h2>(con credito aprobado)</h1>
+                <h1>PAGÁ DESDE <span class="usd">$149 usd</span> AL MES</h1>
+                <h2>(con crédito aprobado)</h1>
                 <div class="container mt-3">
                     <div class="row">
                         <div class="col-4">
                             <img src="img/header/lasik.jpg"/>
-                            <h4>Mejora tu visión con</h4>
+                            <h4>Mejorá tu visión con</h4>
                             <h3>Lasik</h3>
                         </div>
                         <div class="col-4">
@@ -41,17 +80,17 @@
                         </div>
                         <div class="col-4">
                             <img src="img/header/cataratas.jpg"/>
-                            <h4>Recupera tu visión <br>libre de</h4>
+                            <h4>Recuperá tu visión <br>libre de</h4>
                             <h3>Cataratas</h3>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-3" id="form-header">
-                <p>Agenda tu cita de valoracion</p>
+                <p>Agendá tu cita de valoración</p>
                 <p><h6>totalmente gratis</h6></p>
-                <p>y con atencion personalizada</p>
-                <form action="" method="POST" class="mt-3" id="form1">
+                <p>y con atención personalizada.</p>
+                <form action="index.php" method="POST" class="mt-3" id="form1" name="form1" >
                     <div class="form-group mt-2">
                       <label for="fname">Nombre:</label>
                       <input type="text" name="fname" class="form-control" id="fname">
@@ -61,7 +100,7 @@
                       <input type="text" name="lname" class="form-control" id="lname">
                     </div>
                     <div class="form-group mt-2">
-                        <label for="email">Correo electronico:</label>
+                        <label for="email">Correo electrónico:</label>
                         <input type="email" name="email" class="form-control" id="email">
                     </div>
                     <div class="form-group mt-2">
@@ -76,7 +115,7 @@
                             <option value="Cataratas">Cataratas</option>
                           </select>
                     </div>
-                    <button type="submit" class="btn btn-default btn-warning mt-3" onclick="sendForm(1)">Agendar valoración gratis</button>
+                    <button type="button" class="btn btn-default btn-warning mt-3" onclick="sendFormHeader()">Agendar valoración gratis</button>
                   </form>
             </div>
         </div>
@@ -89,13 +128,13 @@
             <div class="col-6">
                 <h2>¡un equipo de</h2>
                 <h1 class="mb-3">expertos!</h1>
-                <p>¡Trabajamos por mas de <strong>35 anios</strong></p>
-                <p>para la <strong>comunidad Hispana!</strong></p>
+                <p>¡Trabajamos por más de <strong>35 años</strong></p>
+                <p>para la <strong>comunidad hispana!</strong></p>
                 <h3 class="mt-3 mb-5">Hablamos español <br> en cada sucursal.</h3>
 
                 <p class="mb-5">Ofrecemos variedad de programas <br>de <strong>financiamiento</strong> disponibles,<br> incluyendo <strong>ITIN.</strong></p>
-                <p class="mb-5"><strong>Dr. Ellis</strong> busca ayudar a la <strong>comunidad <br>Hispana</strong> con pagos accesibles a la medida<br> de sus necesidades <strong>ITIN.</strong></p>
-                <p><button type="submit" class="btn btn-default btn-warning" >Agendar tu valoracion gratuita</button></p>
+                <p class="mb-5"><strong>Dr. Ellis</strong> busca ayudar a la <strong>comunidad <br>hispana</strong> con pagos accesibles a la medida<br> de sus necesidades <strong>ITIN.</strong></p>
+                <p><button type="button" class="btn btn-default btn-warning" ><a href="#form-container-1">Agendá tu valoración gratuita</a></button></p>
             </div>
             <div class="col-6 p-0">
                 <div class="form-group">
@@ -258,10 +297,10 @@
             <div class="col-3"></div>
             <div class="col-6">
                 <div id="footer-form" class="mt-3">
-                    <p>Agenda tu cita de valoración</p>
+                    <p>Agendá tu cita de valoración</p>
                     <h6>totalmente gratis</h6>
-                    <p>y con atencion personalizada</p>
-                    <form action="" method="POST" id="form2" class="mt-3">
+                    <p>y con atención personalizada</p>
+                    <form action="index.php" method="POST" id="form2" name="form2" class="mt-3">
                         <div class="row">
                             <div class="col-6">
                                 <div class="form-group">
@@ -292,8 +331,8 @@
                                     <input type="text" name="whatsapp" class="form-control" id="whatsapp">
                                 </div>
                                 <div class="form-group">
-                                    <label for="procedimiento">Lista de Sucursales:</label>
-                                    <select class="form-select" aria-label="Default select example" name="procedimiento" id="procedimiento">
+                                    <label for="sucursales">Lista de Sucursales:</label>
+                                    <select class="form-select" aria-label="Default select example" name="sucursales" id="sucursales">
                                         <option value="Suc 1 - El Cerrito Oficina">El Cerrito Oficina</option>
                                         <option value="Suc 2 - San José Oficina">San José Oficina</option>
                                         <option value="Suc 3 - Marin-Corte Madera Oficina">Marin-Corte Madera Oficina</option>
@@ -304,7 +343,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-default btn-warning mt-3" onclick="sendForm(2)">Agendar valoracion gratis</button>
+                            <button type="button" class="btn btn-default btn-warning mt-3" onclick="sendFormFooter()">Agendar valoración gratis</button>
                         </div>
                     </form>
                 </div>
@@ -328,7 +367,7 @@
                 <div class="col">
                     <div class="footer-desc">
                         <p>*Este sitio no proporciona consejos médicos. Si bien la información que se encuentra en este sitio web es generalmente
-                        cierta,las condiciones específicas que puedan relacionarse con usted pueden ser diferentes,incluidos el diagnóstico
+                        cierta, las condiciones específicas que puedan relacionarse con usted pueden ser diferentes, incluidos el diagnóstico
                         y los posibles tratamientos. La información en este sitio web no debe considerarse un sustituto de una evaluación,
                         diagnóstico o tratamiento integral por parte de un profesional calificado de atención ocular. Siempre busque el consejo
                         de su proveedor de atención médica calificado si tiene alguna pregunta sobre una inquietud o condición médica.
@@ -346,5 +385,8 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/validate.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

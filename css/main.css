@@ -56,6 +56,12 @@ h6
 p{
     margin-bottom: 0;
 }
+
+button a{
+    color: white;
+    text-decoration: none;
+}
+
 .container-fluid{
     padding-left: 60px;
     padding-right: 60px;
@@ -293,6 +299,16 @@ p{
     font-size: .8rem;
 }
 
+#form-header label.error{
+    font-size: .7rem;
+    color:#ffeb3b;
+}
+
+#footer-form label.error{
+    font-size: .7rem;
+    color:#f44336;
+}
+
 #footer-form .btn-warning{
     width: calc(100% - 24px);
     margin-left: 12px;
@@ -327,6 +343,16 @@ footer{
     padding-bottom: 30px;
 }
 
+.thanks-logo{
+    background: white;
+    text-align: center;
+    position: fixed;
+    padding-bottom: 30px;
+    width: 100%;
+    top: calc(50% - 85px);
+}
+
+.thanks-logo p,
 .footer-logo p{
     color: #4b6c75;
     margin-top: 15px;
@@ -476,7 +502,7 @@ footer{
     .sucursal-item-desc p.suc-title{
         font-size: 1rem;
     }
-
+    .thanks-logo img,
     .footer-logo img{
         width: 100%;
     }
@@ -496,6 +522,11 @@ footer{
 
     #form-container-1 .col-8{
         width: 100%;
+    }
+
+    .thanks-logo{
+        padding: 30px;
+        top: calc(50% - 115px);
     }
 
 }
